@@ -1,0 +1,18 @@
+
+<input type="text" [(ngModel)]="name"/>
+<p>Đây là {{ name }}</p>
+<p *ngIf="age > 15">Hon 15 tuoi</p>
+<p *ngIf="age <= 15">Duoi 15 tuoi</p>
+<p appHighlight> Su dung directive</p>
+
+
+<!-- <div *ngIf="age <= 15; then tre; else gia">
+    <ng-template #tre>Duoi 15 tuoi</ng-template>
+    <ng-template #gia>Tren 15 tuoi</ng-template>
+</div> -->
+<button (click)="resetName()">Reset name</button>
+<ul [ngSwitch]="sodem">
+    <li *ngSwitchCase="8">Tám</li>
+    <li *ngSwitchCase="7">bảy</li>
+    <li *ngSwitchCase="6">6</li>
+</ul>
